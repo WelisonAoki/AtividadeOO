@@ -12,13 +12,25 @@ public class GerenciarFuncionario {
     public static void main(String[] args) {
         Funcionario func1 = new Funcionario();
         
+        //INSTANCIANDO COM CLASSE PUBLICA
+        /*
         func1.idFunc = 1;
         func1.nomeFunc = "Joao";
         func1.departamento = "RH";
-        //func1.dataContratacao(2018, Month.MARCH, 27);
+        func1.dataContratacao(2018, Month.MARCH, 27);
         func1.salario = 1000;
         func1.documento = "123";
-        func1.estaAtivo = true;
+        func1.estaAtivo = true;*/
+        
+        //INSTANCIANDO COM CLASSE PRIVADA
+        
+        func1.setIdFunc(1);
+        func1.setNomeFunc("Lucas");
+        func1.setDepartamento("TI");
+        func1.setDataContratacao(LocalDate.MIN);
+        func1.setSalario(2000);
+        func1.setDocumento("123456");
+        func1.setEstaAtivo(true);
         
         func1.imprimir();
         
